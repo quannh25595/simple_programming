@@ -10,7 +10,7 @@ React is a popular UI library nowadays. With the debut of hooks, React component
 
 One of the common cases with React is when we try to perform some API calling and tracking it's state.
 
-![Demo-Async](/public/img/2020-09-05-demo-async.gif)
+<img src="{{'/public/img/2020-09-05-demo-async.gif' | absolute_url}}" alt="demo-async"/>
 
 ## The traditional way
 
@@ -86,7 +86,7 @@ This is the place that React custom hooks shining.
 
 We need to understand the custom hooks first. Look at the gif below
 
-![Word Count](/public/img/2020-09-05-word-count.gif)
+<img src="{{'/public/img/2020-09-05-word-count.gif' | absolute_url}}" alt="word-count"/>
 
 As you can see from the image, we have a quite simple program: counting the words inside the `textarea`. The code should look like:
 
@@ -187,7 +187,7 @@ export const WordCount = () => {
 
 Great! Here is the result:
 
-![Word Count With Hooks](/public/img/2020-09-05-word-count-with-hooks.gif)
+<img src="{{'/public/img/2020-09-05-word-count-with-hooks.gif' | absolute_url}}" alt="word-count-with-hooks"/>
 
 As you can see, we have a cleaner code, and a reuseable hooks that can be used in other components.
 

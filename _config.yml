@@ -2,7 +2,7 @@
 title: Simple Programming
 tagline: ""
 description: "A personal blog by Quan NH"
-baseurl: "simple_programming"
+baseurl: "/simple_programming"
 paginate: 5
 permalink: pretty
 
@@ -12,7 +12,7 @@ plugins:
 
 defaults:
   - scope:
-      path: "assets/img"
+      path: "public/img"
     values:
       image: true
   - scope:

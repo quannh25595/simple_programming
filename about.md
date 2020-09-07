@@ -26,13 +26,13 @@ So, have fun!
 </style>
 
 <div style="display: flex">
-  <img src="/assets/img/avatar.jpg" alt="Avatar" style="width: 50px; height: 50px">
+  <img src="{{ '/public/img/avatar.jpg' | absolute_url }}" alt="Avatar" style="width: 50px; height: 50px">
   <div style="margin-left: 15px;">
     <small>Find me on:</small>
     <div style="display: flex">
-      <a href="https://www.facebook.com/quan.nh.25595"><img class="social-icon" src="/assets/img/facebook_ico.png"/></a>
-      <a href="https://twitter.com/quannh25595"><img class="social-icon" src="/assets/img/twitter_ico.png"/></a>
-      <a href="https://github.com/quannh25595"><img class="social-icon" src="/assets/img/github_ico.png"/></a>
+      <a href="https://www.facebook.com/quan.nh.25595"><img class="social-icon" src="{{ '/public/img/facebook_ico.png' | absolute_url }}"/></a>
+      <a href="https://twitter.com/quannh25595"><img class="social-icon" src="{{ '/public/img/twitter_ico.png' | absolute_url }}"/></a>
+      <a href="https://github.com/quannh25595"><img class="social-icon" src="{{ '/public/img/github_ico.png' | absolute_url }}"/></a>
     </div>
   </div>
 </div>
