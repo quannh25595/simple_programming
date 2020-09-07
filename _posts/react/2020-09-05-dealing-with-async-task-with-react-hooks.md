@@ -10,7 +10,7 @@ React is a popular UI library nowadays. With the debut of hooks, React component
 
 One of the common cases with React is when we try to perform some API calling and tracking it's state.
 
-![Demo-Async](/assets/img/2020-09-05-demo-async.gif)
+![Demo-Async](/public/img/2020-09-05-demo-async.gif)
 
 ## The traditional way
 
@@ -86,9 +86,11 @@ This is the place that React custom hooks shining.
 
 We need to understand the custom hooks first. Look at the gif below
 
-![Word Count](/assets/img/2020-09-05-word-count.gif)
+![Word Count](/public/img/2020-09-05-word-count.gif)
 
 As you can see from the image, we have a quite simple program: counting the words inside the `textarea`. The code should look like:
+
+{% raw %}
 
 ```jsx
 import React, { useState, useEffect } from "react";
@@ -119,6 +121,8 @@ export const WordCount = () => {
 
 ```
 
+{% endraw %}
+
 What if we also need the `wordCount` behavior for other components as well? Can we reuse the `wordCount` logic somewhere else?
 
 Definitely yes 🙂. Let's extract the `wordCount` logic to a custom hooks. Look at the **useWordCount.js** file:
@@ -139,6 +143,8 @@ export const useWordCount = (textValue) => {
 ```
 
 Now we have the `wordCount` logic separated. And basically we can count any text we want. Get back to our component, and add few more elements that also need to be counted. Our old `WordCount` component should look like this:
+
+{% raw %}
 
 ```jsx
 import React, { useState } from "react";
@@ -177,9 +183,11 @@ export const WordCount = () => {
 
 ```
 
+{% endraw %}
+
 Great! Here is the result:
 
-![Word Count With Hooks](/assets/img/2020-09-05-word-count-with-hooks.gif)
+![Word Count With Hooks](/public/img/2020-09-05-word-count-with-hooks.gif)
 
 As you can see, we have a cleaner code, and a reuseable hooks that can be used in other components.
 
