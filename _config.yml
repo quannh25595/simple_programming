@@ -1,0 +1,22 @@
+# Setup
+title: Simple Programming
+tagline: ""
+description: "A personal blog by Quan NH"
+baseurl: "simple_programming"
+paginate: 5
+permalink: pretty
+
+# Gems
+plugins:
+  - jekyll-paginate
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      author: "Quan NH"
