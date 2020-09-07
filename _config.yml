@@ -2,7 +2,7 @@
 title: Simple Programming
 tagline: ""
 description: "A personal blog by Quan NH"
-baseurl: ""
+baseurl: "https://quannh25595.github.io/simple_programming"
 paginate: 5
 permalink: pretty
 
