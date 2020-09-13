@@ -1,0 +1,11 @@
+.w-100 {
+    width: 100%;
+}
+
+pre code {
+    white-space: pre;
+}
+
+pre.highlight {
+    overflow: auto;
+}
